@@ -105,7 +105,12 @@ body {
     padding-bottom: 0.5rem;
     transition: all 0.3s ease-in-out;
 }
-
+#menu_disable {
+    display: none;
+}
+#menu_logo {
+    width: 2rem;
+}
 #menu_images {
     display: flex;
     float: right;
@@ -202,7 +207,7 @@ body {
     }
     #my_photo1 {
         width: 50%;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     #body_block {
         margin-top: 1rem;
@@ -213,11 +218,17 @@ body {
     #menu_names {
         column-gap: 1rem;
     }
+    #my_photo1 {
+        width: 80%;
+    }
 }
 
 @media (max-width: 600px) {
     #about_me b {
         font-size: 1.6rem;
+    }
+    #my_photo1 {
+        width: 90%;
     }
 }
 
@@ -232,6 +243,20 @@ body {
         width: 1rem;
         padding: 0.6rem;
     }
+    #my_photo1 {
+        width: 92%;
+    }
+    #about_me {
+        font-size: 1rem;
+    }
+    #menu_names {
+        display: none;
+    }
+    #menu_disable {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -244,5 +269,8 @@ body {
     #skills_menu_block,
     #projects_menu_block {
         font-size: 0.5rem;
+    }
+    #my_photo1 {
+        width: 95%;
     }
 }
