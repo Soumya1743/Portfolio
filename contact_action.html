@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0;
+            padding: 1rem 2rem;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="menu_block">
+        <div id="menu_names">
+            <img src="Resources/Home.png" alt="" id="home_image">
+            <a href="index.html" id="resume_href">
+                <h3 id="resume_menu_block">RESUME</h3>
+            </a>
+            <a href="index.html" id="resume_href">
+                <h3 id="skills_menu_block">SKILLS</h3>
+            </a>
+            <a href="index.html" id="resume_href">
+                <h3 id="projects_menu_block">PROJECTS</h3>
+            </a>
+            <a href="index.html" id="resume_href">
+                <h3 id="contact_menu_block">CONTACT</h3>
+            </a>
+        </div>
+        <div id="menu_disable">
+            <img src="Resources/Home.png" alt="" id="home_image">
+
+            <button id="button_dropdown" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img src="Resources/Menu (2).png"
+                    alt="" id="menu_logo"></button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasTopLabel">SOUMYA RG</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div style="background-color: black;" id="offcanvas_dropdown" class="offcanvas-body">
+                    <a href="#about_me" id="resume_href">
+                        <h3 id="resume_menu_block">RESUME</h3>
+                    </a>
+                    <a href="#my_skills" id="resume_href">
+                        <h3 id="skills_menu_block">SKILLS</h3>
+                    </a>
+                    <a href="#projects" id="resume_href">
+                        <h3 id="projects_menu_block">PROJECTS</h3>
+                    </a>
+                    <a href="#" id="resume_href">
+                        <h3 id="contact_menu_block">CONTACT</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="menu_images">
+            <a href="https://www.linkedin.com/in/soumya-rangaiahgari-aa1aa6290/">
+                <img src="Resources/linkedin.png" alt="" id="images_logo">
+            </a>
+            <a href="https://github.com/Soumya1743">
+                <img src="Resources/github.png" alt="" id="images_logo">
+            </a>
+        </div>
+    </div>
+
+
+
+    <div id="contact_block">
+        <h1>Thank You for Contacting....</h1>
+
+        <div class="footer">
+            <p>Soumya RG - © 2025. Designed with <img src="Resources/Heart.png" alt="Image" style="width: 1.2rem;"></p>
+        </div>
+    </div>
+</body>
+</html>
