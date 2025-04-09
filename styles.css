@@ -67,7 +67,6 @@ body {
 }
 
 #resume_button:hover {
-    transform: scale(1.1);
     color: black;
     background-color: #00ADB5;
     transition: all 1s ease-in-out;
@@ -279,6 +278,30 @@ body {
     cursor: pointer;
 }
 
+.rocket {
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.rocket:hover {
+    animation: moveDiagonal 1s ease-in-out;
+    /* Diagonal animation */
+}
+
+/* Define diagonal movement */
+@keyframes moveDiagonal {
+    0% {
+        transform: translate(0, 0);
+        /* Start position */
+    }
+
+    100% {
+        transform: translate(10vw, -10vh);
+        /* Move diagonally to top-right */
+    }
+}
+
 #projects_list {
     display: flex;
     justify-content: center;
@@ -303,6 +326,7 @@ body {
 .project:hover {
     scale: 0.9;
     transition: all 1s ease-in-out;
+    bottom: 1rem;
 }
 
 .project>p {
@@ -370,12 +394,13 @@ body {
     gap: 15px;
 }
 
-#form > .label {
+#form>.label {
     font-size: 1rem;
     color: #555;
 }
 
-.input, textarea {
+.input,
+textarea {
     width: 100%;
     padding: 5px;
     font-size: 1rem;
@@ -383,7 +408,8 @@ body {
     border-radius: 4px;
 }
 
-.input:focus, textarea:focus {
+.input:focus,
+textarea:focus {
     border-color: #F3C623;
     outline: none;
 }
@@ -474,10 +500,6 @@ body {
         height: 20%;
     }
 
-    #menu_images {
-        display: none;
-    }
-
     #disable_details {
         display: block;
         text-align: center;
@@ -521,6 +543,10 @@ body {
 
     .project:hover p {
         padding: 1rem 1rem 2rem 1rem;
+    }
+
+    #projects_list {
+        row-gap: 1rem;
     }
 }
 
@@ -572,6 +598,10 @@ body {
         z-index: 100;
     }
 
+    #menu_images {
+        display: none;
+    }
+
     #color {
         width: 100%;
     }
@@ -584,11 +614,11 @@ body {
         margin-top: 5rem;
     }
 
-    #education_block > .education_details > h5 {
+    #education_block>.education_details>h5 {
         font-size: 1rem;
     }
 
-    #education_block > .education_details > p {
+    #education_block>.education_details>p {
         font-size: 0.5rem;
     }
 
@@ -612,7 +642,20 @@ body {
     #body_block {
         padding: 0.4rem;
     }
-    
+
+    #menu_images {
+        vertical-align: middle;
+        padding: 0;
+        column-gap: 0;
+    }
+
+    #menu_images>a {
+        margin: 0;
+    }
+
+    #images_logo {
+        margin: 0;
+    }
 }
 
 @media (max-width: 400px) {
