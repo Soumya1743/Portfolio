@@ -128,10 +128,13 @@ body {
 #button_dropdown {
     background-color: #00ADB5;
     border: none;
+    width: 2.5rem;
+    padding: 0;
+    text-align: center;
 }
 
 #menu_logo {
-    width: 2rem;
+    width: 1.5rem;
 }
 
 #menu_images {
@@ -278,29 +281,6 @@ body {
     cursor: pointer;
 }
 
-.rocket {
-    font-size: 2rem;
-    position: relative;
-    display: inline-block;
-}
-
-.rocket:hover {
-    animation: moveDiagonal 1s ease-in-out;
-    /* Diagonal animation */
-}
-
-/* Define diagonal movement */
-@keyframes moveDiagonal {
-    0% {
-        transform: translate(0, 0);
-        /* Start position */
-    }
-
-    100% {
-        transform: translate(10vw, -10vh);
-        /* Move diagonally to top-right */
-    }
-}
 
 #projects_list {
     display: flex;
