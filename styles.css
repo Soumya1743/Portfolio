@@ -303,6 +303,11 @@ body {
     background-size: cover;
     border: 1px solid gray;
     box-shadow: 7px 7px 10px rgb(186, 186, 186);
+    backface-visibility: hidden;
+}
+
+.title_disable {
+    display: none;
 }
 
 .project:hover {
