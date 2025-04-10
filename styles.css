@@ -5,6 +5,9 @@ body {
     box-sizing: border-box;
     /* cursor: url(Resources/Round.png), auto; */
     /* cursor: url(Resources/Round.png) 0 0, auto; */
+    background: linear-gradient(150deg, rgb(210, 244, 255), white);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #portfolio {
@@ -46,7 +49,7 @@ body {
 
 #details {
     text-align: justify;
-    padding: 3rem 1rem 3rem 2rem;
+    padding: 3rem 0rem 1rem 0rem;
     font-size: 0.93rem;
 }
 
@@ -55,12 +58,12 @@ body {
 }
 
 #resume_button {
-    padding: 0.5rem 1rem;
+    padding: 0.2rem;
     background-color: #F3C623;
     color: white;
     opacity: 100%;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
@@ -163,7 +166,6 @@ body {
 }
 
 #body_block {
-    background-color: white;
     border-radius: 10px;
     padding: 1rem 1rem 0rem 1rem;
 }
@@ -183,7 +185,7 @@ body {
 #my_skills,
 #education,
 #projects {
-    padding-top: 4rem;
+    padding-top: 1rem;
 }
 
 #skills {
@@ -573,7 +575,7 @@ textarea:focus {
         left: 0;
         right: 0;
         padding: 0.5rem;
-        background-color: #000000;
+        background-color: #333;
         position: fixed;
         z-index: 100;
     }
@@ -588,10 +590,6 @@ textarea:focus {
 
     #portfolio {
         padding: 0.5rem;
-    }
-
-    #disable_details {
-        margin-top: 5rem;
     }
 
     #education_block>.education_details>h5 {
@@ -616,7 +614,7 @@ textarea:focus {
     }
 
     #details>p {
-        font-size: 0.5rem;
+        font-size: 0.93rem;
     }
 
     #body_block {
@@ -640,7 +638,7 @@ textarea:focus {
 
 @media (max-width: 400px) {
     #resume_button {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     #resume_menu_block,
