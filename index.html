@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="buffer.css">
 </head>
 
 <body>
+
+    <div id="loader">
+        <p><span class="dots"><span id="span1"></span><span id="span2"></span><span id="span3"></span></span></p>
+    </div>
+
     <div id="portfolio">
         <div id="container1"> <br>
             <h3 id="name">SOUMYA RG</h3>
@@ -20,11 +26,22 @@
             <div id="details">
                 <p><b>Birthday : </b> 20th May 2002</p>
                 <p><b>From : </b> Hyderabad, Telangana, India</p>
-                <p><b>Email : </b> soumyareddy.rg@gmail.com</p>
+                <table>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td style="font-size: 0.85rem;"> &nbsp; soumyarangaiahgari043@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="font-size: 0.85rem;"> &nbsp; soumyareddy.rg@gmail.com</td>
+                    </tr>
+                </table>
+
             </div>
 
             <a href="Resources/Soumya_Resume (2) (1).pdf" download><button id="resume_button">Download
                     Resume</button></a>
+
 
         </div>
 
@@ -112,7 +129,7 @@
                 <div id="details">
                     <p><b>Birthday : </b> 20th May 2002</p>
                     <p><b>From : </b> Hyderabad, Telangana, India</p>
-                    <p><b>Email : </b> soumyarangaraihari043@gmail.com</p>
+                    <p><b>Email : </b>soumyarangaiahgari043@gmail.com<br>&nbsp;soumyareddy.rg@gmail.com </p>
                 </div>
 
                 <a href="Resources/Soumya_Resume (2) (1).pdf" download><button id="resume_button">Download
@@ -223,7 +240,7 @@
                         <a class="project project5" href="https://soumya1743.github.io/Flavors/">
                             <p class="title">Flavors</p>
                         </a>
-                        
+
                     </div>
                     <br><br><br><br>
                     <img src="Resources/border_bottom_gradient.png" style="width: 10rem;" alt="Image">
@@ -261,6 +278,7 @@
     </div>
 
 
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
